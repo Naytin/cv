@@ -1,0 +1,54 @@
+@import '../scss/_media';
+
+.header {
+  height: 100%;
+  width: 30%;
+  color: #49b3f1;
+  background-color: transparent;
+  text-align: center;
+  .content {
+    img {
+      margin: 70px 0 40px 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 49%;
+      border: 2px solid #fff;
+    }
+    .title {
+      span {
+        font-style: italic;
+        color: #fff;
+      }
+    }
+  }
+  .socials {
+    margin-top: 20px;
+    a {
+      font-size: 1.4em;
+    }
+    a + a {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.2em;
+  }
+  .header {
+    width: 30%;
+    .content {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+}

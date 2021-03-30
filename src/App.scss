@@ -1,0 +1,56 @@
+@import "./scss/_media";
+
+.container {
+  min-height: 100vh;
+  height: 100%;
+  background: rgb(9,38,121);
+  background: linear-gradient(90deg, rgba(9,38,121,1) 7%, rgba(8,56,135,0.8267682072829132) 41%, rgba(0,212,255,0.896796218487395) 96%);
+  display: flex;
+}
+.content__wrapper {
+  padding: 50px;
+  width: 70%;
+  background-color: #001725;
+  color: #fff;
+  text-align: center;
+}
+
+.message__wrapper {
+  margin-top: 10px;
+}
+
+
+// styling scrollbar
+html {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.7em;
+  }
+
+  &::-webkit-scrollbar-track {
+
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #001725;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 120px;
+    background-color: #1eaef387;
+    border: none;
+    border-radius: 7px;
+  }
+}
+// styling scrollbar
+
+
+@media (max-width: 768px) {
+  .content__wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content__wrapper {
+    width: 100%;
+  }
+}
