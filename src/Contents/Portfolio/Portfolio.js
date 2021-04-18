@@ -3,28 +3,32 @@ import s from './Portfolio.module.scss'
 import {NavLink} from "react-router-dom";
 import {motion} from "framer-motion";
 import {containerVariant} from "../Home/Home";
+import {projectInfo} from "../../common/data/data";
 
 
 const imgUrl = "https://image.freepik.com/free-vector/personal-portfolio-landing-page-template_156081-10.jpg"
 
-const Portfolio = ({switchShow}) => {
-    React.useEffect(() => {
-        switchShow((state => !state))
-        return () => {
-            switchShow((state => !state))// при отключении копмоненты включаем Header
-        }
-    },[])
+const Portfolio = React.memo(({showHeader}) => {
 
-    const items = [1,2,3,4,5].map((a,i) => <PortfolioItem
-        key={'Social-network' + i} img={imgUrl}
-        endPoint={"Social-network"}/>)
+    React.useEffect(() => {
+        showHeader()
+        return () => {
+            showHeader()// при отключении копмоненты включаем Header
+        }
+    }, [showHeader])
+
+    const items = projectInfo.map((pi, i) => <PortfolioItem
+        key={pi.id + i} img={imgUrl}
+        endPoint={pi.title}
+        type={pi.type}/>
+    )
 
     return (
-        <motion.div className={s.wrapper}
-                    variants={containerVariant}
-                    initial='hidden'
-                    animate='visible'
-                    exit='exit'
+        <motion.div
+            variants={containerVariant}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
         >
             <h3 className={s.title}>portfolio</h3>
             <section>
@@ -33,21 +37,22 @@ const Portfolio = ({switchShow}) => {
                 </div>
             </section>
         </motion.div>
-
     )
-}
+})
 
 export default Portfolio
 
-export const PortfolioItem = ({img, endPoint}) => {
+export const PortfolioItem = React.memo(({img, endPoint, type}) => {
     return (
         <div className={s.item}>
             <NavLink to={`/PortfolioInfo/${endPoint}`}>
                 <img src={img} alt={endPoint}/>
                 <div className={s.mirror}>
-                    click to see more...
+                    <i className={`${s.file} icon-file-text2`}></i>
+                    <p>{type}</p>
+                    <i className={`${s.arrow} icon-arrow-right2`}></i>
                 </div>
             </NavLink>
         </div>
     )
-}
+})

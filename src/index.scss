@@ -11,6 +11,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  background-color: #001725;
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -24,8 +25,22 @@ code {
     monospace;
 }
 
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {

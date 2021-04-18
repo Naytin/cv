@@ -1,31 +1,61 @@
 .wrapper {
   position: relative;
+  text-align: left;
 }
 
 .backToPortfolio {
-  text-align: left;
   color: #fff;
   font-size: 1.4em;
-
   &:hover {
     transition: all 0.3s linear;
-    &:after {
-      content: 'Back to Portfolio';
-      position: absolute;
-      color: #37e4bcc2;
-      z-index: 100;
-      padding: 2px;
-      width: 150px;
-      font-size: 0.8em;
-      text-align: center;
-      background: #52515180;
-      left: 20px;
-    }
   }
 
 }
-
-.title {
-  font-size: 2em;
-  text-transform: uppercase;
+.details__wrapper {
+  margin-top: 20px;
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  font-size: 1.5rem;
+  .title{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .project__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .slider__wrapper {
+      width: 49%;
+      height: 600px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      img {
+        position: absolute;
+      }
+    }
+    .details__info {
+      width: 49%;
+      height: 600px;
+      text-align: left;
+      .details__title{
+        font-size: 1.3rem;
+        margin-top: 20px;
+        &:first-child {
+          margin-top: 0!important;
+        }
+        a {
+          padding: 3px;
+          color: black;
+          background-color: yellow;
+        }
+      }
+    }
+  }
 }
+
+

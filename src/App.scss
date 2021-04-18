@@ -1,16 +1,12 @@
-@import "./scss/_media";
-
 .container {
   min-height: 100vh;
   height: 100%;
-  background: rgb(9,38,121);
-  background: linear-gradient(90deg, rgba(9,38,121,1) 7%, rgba(8,56,135,0.8267682072829132) 41%, rgba(0,212,255,0.896796218487395) 96%);
   display: flex;
 }
 .content__wrapper {
   padding: 50px;
   width: 100%;
-  background-color: #001725;
+  //background-color: #001725;
   color: #fff;
   text-align: center;
 }

@@ -5,11 +5,10 @@ const Contacts = () => {
     return (<>
             <h3 className={s.title}>Contacts</h3>
             <div className={s.wrapper}>
-                <div className={s.block}>
-                    <span className='icon-phone'> 093-551-44-74</span>
-                </div>
-                <div className={s.block}>
-                    <span className='icon-envelope'> worlddesign1987@gmail.com</span>
+                <div className={s.contacts}>
+                    <p>. . .</p>
+                    <p><i className='icon-phone'></i> 093-551-44-74</p>
+                    <p><i className='icon-envelope'></i> worlddesign1987@gmail.com</p>
                 </div>
             </div>
         </>

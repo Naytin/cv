@@ -13,7 +13,7 @@
   -7px -7px 14px #0a0a0a4f;
   background-color: #3d87f78f;
   text-align: center;
-  opacity: 0.3;
+  //opacity: 0.3;
   transition: all 0.3s linear;
   display: flex;
   flex-direction: column;
@@ -43,11 +43,13 @@
 
 .info {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 10px;
   margin: 20px 40px;
   width: 65%;
   border-radius: 7px;
-  background-color: #b9b9b961;
+  background-color: #0e6bbb3b;
   p {
     border-radius: 10px;
     padding: 10px;

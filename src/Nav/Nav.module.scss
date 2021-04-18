@@ -2,6 +2,7 @@ nav {
   display: flex;
   padding: 220px 10px;
   background-color: #0077bd;
+  z-index: 20;
   .list {
     display: flex;
     flex-direction: column;

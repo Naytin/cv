@@ -1,0 +1,38 @@
+.content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #2d6175;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .image__box {
+      padding: 5px;
+      border: 2px solid #1bd4e63d;
+      width: 50%;
+      img  {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .desc {
+      width: 45%;
+      padding: 5px;
+      background-color: #ffffff36;
+    }
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 10px 5px;
+    border-radius: 3px;
+    background-color: #25334c;
+    color: #08f6ef;
+    -webkit-box-shadow: 1px 2px 9px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 2px 9px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 2px 9px 0px rgba(50, 50, 50, 0.75);
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}

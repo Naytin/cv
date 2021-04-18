@@ -1,11 +1,18 @@
 .title {
     font-size: 2em;
-    text-align: left;
+    text-align: center;
 }
 .wrapper {
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    .contacts {
+        height: 200px;
+        p {
+            margin-top: 10px;
+        }
+    }
 }
 
 .block {
