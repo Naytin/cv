@@ -48,9 +48,9 @@ export const PortfolioItem = React.memo(({img, endPoint, type}) => {
             <NavLink to={`/PortfolioInfo/${endPoint}`}>
                 <img src={img} alt={endPoint}/>
                 <div className={s.mirror}>
-                    <i className={`${s.file} icon-file-text2`}></i>
+                    <i className={`${s.file} icon-file-text2`}/>
                     <p>{type}</p>
-                    <i className={`${s.arrow} icon-arrow-right2`}></i>
+                    <i className={`${s.arrow} icon-arrow-right2`}/>
                 </div>
             </NavLink>
         </div>

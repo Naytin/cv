@@ -2,6 +2,7 @@ import React from 'react'
 import s from './Home.module.scss'
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
+
 export const containerVariant = {
     hidden: {
         opacity: 0,
@@ -13,7 +14,6 @@ export const containerVariant = {
 }
 
 const Home = () => {
-
     return (
         <motion.div className={s.wrapper}
                     variants={containerVariant}
@@ -28,7 +28,7 @@ const Home = () => {
                           initial={{ opacity: 0 }}
                           animate={{ scale: 2, opacity: 1, transition: {delay: 1, duration: 1}}}
                           transition={{ duration: 0.5 }}
-            ></motion.span></Link>
+            /></Link>
         </motion.div>
 
     )

@@ -2,6 +2,17 @@ import React from 'react'
 import {NavLink} from "react-router-dom";
 import s from './PortfolioInfo.module.scss'
 import {Slider} from "./Slider/Slider";
+import {motion} from "framer-motion";
+
+export const containerVariant = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {delay: 0.5, duration: 1.5}
+    },
+}
 
 
 const PortfolioInfo = React.memo(({showHeader, data}) => {
@@ -24,7 +35,11 @@ const PortfolioInfo = React.memo(({showHeader, data}) => {
 export default PortfolioInfo
 
 const Details = ({data}) => {
-    return <div className={s.details__wrapper}>
+    return <motion.div className={s.details__wrapper}
+                variants={containerVariant}
+                initial='hidden'
+                animate='visible'
+                exit='exit'>
         <h5 className={s.title}>{data.title}</h5>
         <div className={s.project__wrapper}>
             <div className={s.slider__wrapper}>
@@ -45,6 +60,6 @@ const Details = ({data}) => {
                 <h6 className={s.details__title}>Share: </h6>
             </div>
         </div>
-    </div>;
+    </motion.div>;
 }
 

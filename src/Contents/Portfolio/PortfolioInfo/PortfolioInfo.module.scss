@@ -6,48 +6,61 @@
 .backToPortfolio {
   color: #fff;
   font-size: 1.4em;
+
   &:hover {
     transition: all 0.3s linear;
   }
 
 }
+
 .details__wrapper {
   margin-top: 20px;
   position: relative;
-  padding: 20px;
+  height: 100%;
+  padding: 30px;
   background-color: #fff;
   color: black;
   font-size: 1.5rem;
-  .title{
+
+  .title {
     text-align: center;
     font-size: 1.6rem;
     margin-bottom: 20px;
   }
+
   .project__wrapper {
+    position: relative;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
     .slider__wrapper {
-      width: 49%;
-      height: 600px;
+      height: 500px;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
+      margin-bottom: 20px;
+
       img {
         position: absolute;
       }
     }
+
     .details__info {
-      width: 49%;
+      margin-top: 10px;
       height: 600px;
       text-align: left;
-      .details__title{
+
+      .details__title {
         font-size: 1.3rem;
         margin-top: 20px;
+
         &:first-child {
-          margin-top: 0!important;
+          margin-top: 0 !important;
         }
+
         a {
           padding: 3px;
           color: black;
@@ -55,6 +68,59 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .details__wrapper {
+    padding: 20px;
+    font-size: 1.2rem;
+
+    .project__wrapper {
+      .slider__wrapper {
+        height: 350px;
+      }
+      .details__info {
+        .details__title {
+          font-size: 1.1rem;
+        }}
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .details__wrapper {
+    font-size: 1rem;
+    .title {
+      font-size: 1.2rem;
+    }
+    .project__wrapper {
+      .slider__wrapper {
+        height: 260px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .details__wrapper {
+    padding: 8px;
+
+    .title {
+      font-size: 1rem;
+    }
+
+    .project__wrapper {
+      .slider__wrapper {
+        height: 220px;
+      }
+      .details__info {
+        .details__title {
+          font-size: 1rem;
+        }}
+    }
+
   }
 }
 

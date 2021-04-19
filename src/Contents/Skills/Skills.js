@@ -32,7 +32,7 @@ const Skills = () => {
         i={i}
     /> )
     return (<>
-            <h3 className={s.title}><span>&lt;</span>My Skills <span>/&gt;</span></h3>
+            <h3 className={s.title}>&lt;<span>My</span> Skills/&gt;</h3>
             <div className={s.wrapper}>
                 {skill}
             </div>

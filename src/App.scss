@@ -37,4 +37,8 @@ html {
   }
 }
 // styling scrollbar
-
+@media (max-width: 480px) {
+  .content__wrapper {
+    padding: 10px;
+  }
+}
