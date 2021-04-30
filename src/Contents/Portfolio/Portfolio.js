@@ -6,7 +6,7 @@ import {containerVariant} from "../Home/Home";
 import {projectInfo} from "../../common/data/data";
 
 
-const imgUrl = "https://image.freepik.com/free-vector/personal-portfolio-landing-page-template_156081-10.jpg"
+// const imgUrl = "https://image.freepik.com/free-vector/personal-portfolio-landing-page-template_156081-10.jpg"
 
 const Portfolio = React.memo(({showHeader}) => {
 
@@ -18,10 +18,11 @@ const Portfolio = React.memo(({showHeader}) => {
     }, [showHeader])
 
     const items = projectInfo.map((pi, i) => <PortfolioItem
-        key={pi.id + i} img={imgUrl}
+        key={pi.id + i} img={pi.images}
         endPoint={pi.title}
         type={pi.type}/>
     )
+
 
     return (
         <motion.div

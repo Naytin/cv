@@ -54,7 +54,7 @@ const Details = ({data}) => {
                 <article>
                     {data.technologies.map(t => <p key={t}>&emsp;&#8226; {t}</p>)}
                 </article>
-                <h6 className={s.details__title}>URL:
+                <h6 className={s.details__title}>URL:&emsp;
                     <a target='_blank' href={data.url}>{data.url}</a>
                 </h6>
                 <h6 className={s.details__title}>Share: </h6>

@@ -1,12 +1,13 @@
 .wrapper {
   position: relative;
   text-align: left;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .backToPortfolio {
   color: #fff;
   font-size: 1.4em;
-
   &:hover {
     transition: all 0.3s linear;
   }
@@ -49,7 +50,7 @@
     }
 
     .details__info {
-      margin-top: 10px;
+      margin-top: 30px;
       height: 600px;
       text-align: left;
 

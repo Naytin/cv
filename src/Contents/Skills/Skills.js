@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Skills.module.scss'
 import Skill from "./Skill/Skill";
+import {motion} from "framer-motion";
 import react from '../../assets/icon/iconfinder_react_color_7423888.png'
 import html from '../../assets/icon/iconfinder_html_169775.png'
 import css from '../../assets/icon/iconfinder_sass_1297046.png'
@@ -21,18 +22,18 @@ const state = [
 
 
 const Skills = () => {
-    const [expanded, setExpanded] = React.useState(0);
     const skill = state.map((s,i) => <Skill
         key={i}
         icon={s.icon}
         title={s.skill}
         description={s.description}
-        setExpanded={setExpanded}
-        expanded={expanded}
-        i={i}
+        duration={i}
     /> )
     return (<>
-            <h3 className={s.title}>&lt;<span>My</span> Skills/&gt;</h3>
+            <motion.h3 className={s.title}
+                       initial={{y: -100, opacity: 0}}
+                       animate={{y: 0, opacity: 1, transition: {delay: 0.5, duration: 1.5}}}
+            >&lt;<span>My</span> Skills/&gt;</motion.h3>
             <div className={s.wrapper}>
                 {skill}
             </div>

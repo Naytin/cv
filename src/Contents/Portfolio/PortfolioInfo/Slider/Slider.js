@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
-import { images } from "../../../../assets/img/image-data";
+// import { images } from "../../../../assets/img/image-data";
 import s from './Slider.module.scss'
 
 const variants = {
@@ -37,8 +37,8 @@ const swipePower = (offset, velocity) => {
     return Math.abs(offset) * velocity;
 };
 
-export const Slider = (props) => {
-    console.log(props.images)
+export const Slider = ({images}) => {
+    console.log(images)
     const [[page, direction], setPage] = useState([0, 0]);
 
     // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
@@ -50,7 +50,7 @@ export const Slider = (props) => {
     const paginate = (newDirection) => {
         setPage([page + newDirection, newDirection]);
     };
-
+    const imageLenght = images.length > 1
     return (
         <>
             <AnimatePresence initial={false} custom={direction}>
@@ -80,12 +80,14 @@ export const Slider = (props) => {
                     }}
                 />
             </AnimatePresence>
-            <div className={s.next} onClick={() => paginate(1)}>
-                {"‣"}
-            </div>
-            <div className={s.prev} onClick={() => paginate(-1)}>
-                {"‣"}
-            </div>
+            {imageLenght && <><div className={s.next} onClick={() => paginate(1)}>
+            {"‣"}
+                </div>
+                <div className={s.prev} onClick={() => paginate(-1)}>
+            {"‣"}
+                </div>
+                </>
+                }
         </>
     );
 };
