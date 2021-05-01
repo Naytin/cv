@@ -1,27 +1,35 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.8bc9ed2a.chunk.css",
-    "main.js": "/cv/static/js/main.d7130b4b.chunk.js",
-    "main.js.map": "/cv/static/js/main.d7130b4b.chunk.js.map",
+    "main.css": "/cv/static/css/main.f9ec2729.chunk.css",
+    "main.js": "/cv/static/js/main.08f83ba5.chunk.js",
+    "main.js.map": "/cv/static/js/main.08f83ba5.chunk.js.map",
     "runtime-main.js": "/cv/static/js/runtime-main.e0c425ca.js",
     "runtime-main.js.map": "/cv/static/js/runtime-main.e0c425ca.js.map",
-    "static/js/2.e3fd09dd.chunk.js": "/cv/static/js/2.e3fd09dd.chunk.js",
-    "static/js/2.e3fd09dd.chunk.js.map": "/cv/static/js/2.e3fd09dd.chunk.js.map",
+    "static/js/2.32b5519e.chunk.js": "/cv/static/js/2.32b5519e.chunk.js",
+    "static/js/2.32b5519e.chunk.js.map": "/cv/static/js/2.32b5519e.chunk.js.map",
     "static/js/3.085cb4f7.chunk.js": "/cv/static/js/3.085cb4f7.chunk.js",
     "static/js/3.085cb4f7.chunk.js.map": "/cv/static/js/3.085cb4f7.chunk.js.map",
     "index.html": "/cv/index.html",
-    "static/css/main.8bc9ed2a.chunk.css.map": "/cv/static/css/main.8bc9ed2a.chunk.css.map",
-    "static/js/2.e3fd09dd.chunk.js.LICENSE.txt": "/cv/static/js/2.e3fd09dd.chunk.js.LICENSE.txt",
+    "static/css/main.f9ec2729.chunk.css.map": "/cv/static/css/main.f9ec2729.chunk.css.map",
+    "static/js/2.32b5519e.chunk.js.LICENSE.txt": "/cv/static/js/2.32b5519e.chunk.js.LICENSE.txt",
+    "static/media/home page.f90d502e.jpg": "/cv/static/media/home page.f90d502e.jpg",
     "static/media/style.scss": "/cv/static/media/icomoon.ed033c26.ttf",
     "static/media/iconfinder_react_color_7423888.af69f8d7.png": "/cv/static/media/iconfinder_react_color_7423888.af69f8d7.png",
     "static/media/iconfinder_sass_1297046.70da207c.png": "/cv/static/media/iconfinder_sass_1297046.70da207c.png",
     "static/media/my.00dc81bf.jpg": "/cv/static/media/my.00dc81bf.jpg",
-    "static/media/weatherApp.a82f2daa.png": "/cv/static/media/weatherApp.a82f2daa.png"
+    "static/media/our team.f2d5bc7f.jpg": "/cv/static/media/our team.f2d5bc7f.jpg",
+    "static/media/portfolio-contacts.de036e92.png": "/cv/static/media/portfolio-contacts.de036e92.png",
+    "static/media/portfolio-for-photographer.e2b74033.jpg": "/cv/static/media/portfolio-for-photographer.e2b74033.jpg",
+    "static/media/portfolio-for-photographer.menu.de5f4b79.jpg": "/cv/static/media/portfolio-for-photographer.menu.de5f4b79.jpg",
+    "static/media/portfolio.ff3d51ca.jpg": "/cv/static/media/portfolio.ff3d51ca.jpg",
+    "static/media/section Choose.078c00da.jpg": "/cv/static/media/section Choose.078c00da.jpg",
+    "static/media/weatherApp.8dce40aa.png": "/cv/static/media/weatherApp.8dce40aa.png",
+    "static/media/weatherApp_2.1c444d8e.png": "/cv/static/media/weatherApp_2.1c444d8e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e0c425ca.js",
-    "static/js/2.e3fd09dd.chunk.js",
-    "static/css/main.8bc9ed2a.chunk.css",
-    "static/js/main.d7130b4b.chunk.js"
+    "static/js/2.32b5519e.chunk.js",
+    "static/css/main.f9ec2729.chunk.css",
+    "static/js/main.08f83ba5.chunk.js"
   ]
 }
