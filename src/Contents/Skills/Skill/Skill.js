@@ -8,7 +8,7 @@ const Skill = ({icon,title, description, ...props}) => {
     return (<>
             <motion.div className={s.wrapper}
                         initial={{x: 500, opacity: 0}}
-                        animate={{x: 0, opacity: 1, transition: {delay: `0.${props.duration}`, duration: 1}}}
+                        animate={{x: 0, opacity: 1, transition: {delay: `0.${props.delay}`, duration: 1}}}
             >
                 <div  className={s.card}>
                     <img src={icon} alt="" className="icon"/>

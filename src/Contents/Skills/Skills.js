@@ -27,7 +27,7 @@ const Skills = () => {
         icon={s.icon}
         title={s.skill}
         description={s.description}
-        duration={i}
+        delay={i}
     /> )
     return (<>
             <motion.h3 className={s.title}

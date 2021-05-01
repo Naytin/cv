@@ -1,9 +1,15 @@
 import React from 'react'
 import s from './Contacts.module.scss'
+import {motion} from "framer-motion"
+import {containerVariant} from "../Portfolio/PortfolioInfo/PortfolioInfo"
 
 const Contacts = () => {
     return (<>
-            <h3 className={s.title}>Contacts</h3>
+            <motion.h3 className={s.title}
+                       variants={containerVariant}
+                       initial='hidden'
+                       animate='visible'
+            >Contacts</motion.h3>
             <div className={s.wrapper}>
                 <div className={s.contacts}>
                     <p>. . .</p>

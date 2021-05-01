@@ -2,7 +2,6 @@ import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
-// import { images } from "../../../../assets/img/image-data";
 import s from './Slider.module.scss'
 
 const variants = {
@@ -38,9 +37,7 @@ const swipePower = (offset, velocity) => {
 };
 
 export const Slider = ({images}) => {
-    console.log(images)
     const [[page, direction], setPage] = useState([0, 0]);
-
     // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
     // then wrap that within 0-2 to find our image ID in the array below. By passing an
     // absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
