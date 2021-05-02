@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import s from './PortfolioInfo.module.scss'
 import {Slider} from "./Slider/Slider";
 import {motion} from "framer-motion";
@@ -13,7 +13,6 @@ export const containerVariant = {
         transition: {delay: 0.5, duration: 1.5}
     },
 }
-
 
 const PortfolioInfo = React.memo(({showHeader, data}) => {
     React.useEffect(() => {
@@ -57,7 +56,7 @@ const Details = ({data}) => {
                 <p className={s.details__title}>
                     Date of creation: {data.date}</p>
                 <p className={s.details__title}>URL:&emsp;
-                    <a rel="noreferrer" target='_blank' href={data.url}>{data.url}</a>
+                    <Link target='_blank' to={{pathname: data.url}}>{data.url}</Link>
                 </p>
                 <p className={s.details__title}>Share: </p>
             </div>

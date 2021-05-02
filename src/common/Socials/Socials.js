@@ -10,9 +10,7 @@ const PATH = {
 const Socials = () => {
     return <div className={s.socials}>
         <Link target='_blank' to={{pathname: PATH.git}} className='icon-git'/>
-        <Link target='_blank'
-              to={{pathname: PATH.linkedin}}
-              className='icon-linkedin'/>
+        <Link target='_blank' to={{pathname: PATH.linkedin}} className='icon-linkedin'/>
     </div>
 }
 

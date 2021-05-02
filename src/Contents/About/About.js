@@ -33,7 +33,7 @@ const About = React.memo(({showHeader}) => {
                                 animate={{ opacity: 1, x: 0, transition: {delay: 0.4, duration: 0.5}}}
                                 transition={{type: "spring", stiffness: 30 }}>
                         <article>
-                            Hi! I'm Nikitin Vova. I'm a Front End Developer very passionate and dedicated to my work. With 1
+                            Hi! I'm Vova. I'm a Front End Developer very passionate and dedicated to my work. With 1
                             years of experience as a web developer, I have acquired the skills and knowledge necessary for
                             the success of your project. I love every stage of the development process, so every day
                             I improve my knowledge and develop as a developer.

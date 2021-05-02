@@ -15,12 +15,12 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    //width: 80%;
     .image__box {
-      width: 50%;
+      width: 40%;
       border-radius: 8px;
       background-color: #fdfdfd1c;
-      z-index: 1000;
+      z-index: 10;
       img  {
         transform: translate(8px, 8px);
         border-radius: 4px;
@@ -35,7 +35,7 @@
     }
     .desc {
       text-align: left;
-      width: 45%;
+      width: 55%;
       padding: 5px;
       z-index: 1;
       .contacts__block {
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .content {
     .wrapper {
       .image__box {
@@ -90,6 +90,12 @@
       }
       .desc {
         width: 90%;
+        .contacts__block {
+          flex-direction: column;
+          .btn {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }
