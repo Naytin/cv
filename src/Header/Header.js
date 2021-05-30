@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 import Socials from "../common/Socials/Socials";
 
-const PATH = {
-    linkedin: 'https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B8%D0%BD-4b573514a/',
+export const PATH = {
+    linkedin: 'https://www.linkedin.com/in/volodymyrnikitin/',
     git: 'https://github.com/Naytin',
     avatar: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/21760012/original/d4c0c142f91f012c9a8a9c9aeef3bac28036f15b/create-your-cartoon-style-flat-avatar-or-icon.jpg"
 }

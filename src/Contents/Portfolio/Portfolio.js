@@ -6,8 +6,6 @@ import {containerVariant} from "../Home/Home";
 import {projectInfo} from "../../common/data/data";
 
 
-// const imgUrl = "https://image.freepik.com/free-vector/personal-portfolio-landing-page-template_156081-10.jpg"
-
 const Portfolio = React.memo(({showHeader}) => {
 
     React.useEffect(() => {
@@ -24,7 +22,6 @@ const Portfolio = React.memo(({showHeader}) => {
         type={pi.type}
         delay={i}/>
     )
-
 
     return (
         <motion.div
@@ -46,7 +43,6 @@ const Portfolio = React.memo(({showHeader}) => {
 export default Portfolio
 
 export const PortfolioItem = React.memo(({img, endPoint, type, delay}) => {
-    console.log(img)
     return (
         <motion.div className={s.item}
                     initial={{x: 500, opacity: 0}}

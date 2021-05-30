@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './About.module.scss'
-import my from '../../assets/img/my.jpg'
+import my from '../../assets/img/other/my.jpg'
 import {motion} from "framer-motion";
 import Socials from "../../common/Socials/Socials";
 import {Link} from "react-router-dom";
@@ -17,8 +17,7 @@ const About = React.memo(({showHeader}) => {
                 initial={{ x: -1000 }}
                 animate={{ x: 0 }}
                 transition={{type: "spring", stiffness: 30 }}
-                // initial={{y: -100, opacity: 0}}
-                // animate={{y: 0, opacity: 1, transition: {delay: 0.5, duration: 1.5}}}
+
             >ABOUT <span className={s.title_highlight}>ME</span></motion.h2>
             <div className={s.content}>
                 <div className={s.wrapper}>

@@ -12,7 +12,7 @@ import Contacts from "./Contents/Contacts/Contacts";
 import PortfolioInfo from "./Contents/Portfolio/PortfolioInfo/PortfolioInfo";
 import {AnimatePresence} from "framer-motion";
 import {projectInfo} from './common/data/data'
-import Loading from './common/Loading/Loading'
+// import Loading from './common/Loading/Loading'
 
 
 const App = () => {
@@ -42,10 +42,6 @@ const App = () => {
                         <Route path='/PortfolioInfo' render={() => <PortfolioInfo showHeader={showHeader} data={data}/>}/>
                     </Switch>
                 </AnimatePresence>
-                {/*<div>*/}
-                {/*    <button onClick={(e) => console.log(e)}>Left</button>*/}
-                {/*    <button onClick={(e) => console.log(e)}>Right</button>*/}
-                {/*</div>*/}
             </div>
         </div>
     );
