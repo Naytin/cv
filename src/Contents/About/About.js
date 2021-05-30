@@ -4,6 +4,7 @@ import my from '../../assets/img/other/my.jpg'
 import {motion} from "framer-motion";
 import Socials from "../../common/Socials/Socials";
 import {Link} from "react-router-dom";
+import resume from '../../Resume.pdf'
 
 const About = React.memo(({showHeader}) => {
     React.useEffect(() => {
@@ -32,16 +33,19 @@ const About = React.memo(({showHeader}) => {
                                 animate={{ opacity: 1, x: 0, transition: {delay: 0.4, duration: 0.5}}}
                                 transition={{type: "spring", stiffness: 30 }}>
                         <article>
-                            Hi! I'm Vova. I'm a Front End Developer very passionate and dedicated to my work. With 1
-                            years of experience as a web developer, I have acquired the skills and knowledge necessary for
-                            the success of your project. I love every stage of the development process, so every day
-                            I improve my knowledge and develop as a developer.
+                            Hi! I'm Vova. I'm a front-end developer, very passionate and dedicated
+                            to my work. Through continuous development, I have
+                            acquired the skills and knowledge necessary to
+                            accomplish the assigned tasks. I love every stage of the
+                            development process, so every day I improve my
+                            knowledge and develop as a developer
+
                         </article>
                         <div className={s.contacts__block}>
                             <Socials/>
-                            <Link to='' target="_blank" className={s.btn}
+                            <Link to='/contacts' className={s.btn}
                             >Contact me</Link>
-                            <Link className={s.btn}
+                            <Link to={resume} target='_blank' className={s.btn}
                             >Download cv</Link>
                         </div>
                     </motion.div>
@@ -49,9 +53,6 @@ const About = React.memo(({showHeader}) => {
 
             </div>
     </>
-
-
-
     )
 })
 

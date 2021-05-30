@@ -10,7 +10,7 @@ import ts from '../../assets/icon/typescript.png'
 import git from '../../assets/icon/git_plain_logo_icon_146507.png'
 
 const state = [
-    {skill: 'React', description: ['React/Redux','Thunk','Saga','Hooks'], icon: react},
+    {skill: 'React', description: ['React/Redux','Thunk','Hooks'], icon: react},
     {skill: 'JavaScript', description: ['JavaScript','ES5/ES6'], icon: js},
     {skill: 'TypeScript', description: ['TypeScript'], icon: ts},
     {skill: 'HTML', description: ['HTML, I work with semantic tag and provide modern feature'], icon: html},
