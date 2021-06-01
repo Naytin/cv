@@ -3,12 +3,12 @@ import s from './Portfolio.module.scss'
 import {NavLink} from "react-router-dom";
 import {motion} from "framer-motion";
 import {containerVariant} from "../Home/Home";
-import {projectInfo} from "../../common/data/data";
+import {useSelector} from "react-redux";
 
 
 const Portfolio = React.memo(() => {
-
-    const items = projectInfo.map((pi, i) => <PortfolioItem
+    const projects = useSelector(state => state.projects.projects)
+    const items = projects.map((pi, i) => <PortfolioItem
         key={pi.id + i}
         img={pi.images}
         endPoint={pi.title}

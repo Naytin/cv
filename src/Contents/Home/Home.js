@@ -31,7 +31,6 @@ const Home = () => {
                           transition={{ duration: 0.5 }}
             /></Link>
         </motion.div>
-
     )
 }
 

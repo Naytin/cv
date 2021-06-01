@@ -1,4 +1,4 @@
-import images from './image-imports'
+import {projectImages} from './images-import'
 
 export const projectInfo = [
     {
@@ -9,7 +9,7 @@ export const projectInfo = [
         date: ' - in progress',
         des: '',
         technologies: ['React','Redux','Thunk','axios', 'Rest API'],
-        images: images.default,
+        images: projectImages.default,
         url: "https://github.com/Naytin/social-network"
     },
     {
@@ -20,7 +20,7 @@ export const projectInfo = [
         date: '31.03.2020',
         des: '',
         technologies: ['HTML', 'CSS/SCSS', 'JavaScript'],
-        images: images.medical,
+        images: projectImages.medical,
         url: "https://naytin.github.io/Medical/"
     },
     {
@@ -32,7 +32,7 @@ export const projectInfo = [
         des: '\n' +
             'portfolio for photographer',
         technologies: ['HTML', 'CSS/SCSS', 'JavaScript', ],
-        images: images.photographer,
+        images: projectImages.photographer,
         url: "https://naytin.github.io/Portfolio/"
     },
     {
@@ -44,7 +44,7 @@ export const projectInfo = [
         des: 'simple APP for show you a weather in your city. \n' +
             'you can choose any city from the selection or write in the input ',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Rest API'],
-        images: images.weatherApp,
+        images: projectImages.weatherApp,
         url: "https://naytin.github.io/weather-app/"
     },
     {
@@ -55,7 +55,7 @@ export const projectInfo = [
         date: ' - in progress',
         des: '',
         technologies: ['React','Redux','Thunk','axios', 'Rest API', 'hooks'],
-        images: images.default,
+        images: projectImages.default,
         url: "https://naytin.github.io/todolist"
     }
 ]

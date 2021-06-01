@@ -11,13 +11,15 @@ import Portfolio from "./Contents/Portfolio/Portfolio";
 import Contacts from "./Contents/Contacts/Contacts";
 import PortfolioInfo from "./Contents/Portfolio/PortfolioInfo/PortfolioInfo";
 import {AnimatePresence} from "framer-motion";
-import {projectInfo} from './common/data/data'
+import {projectInfo} from './common/data/projectsData'
 // import Loading from './common/Loading/Loading'
 
 
 const App = () => {
     const location = useLocation()
     const data = projectInfo.find(d => d.endpoint === location.pathname)
+
+    // check if one of the values is correct Show header component
     const show = location.pathname === '/Skills' || location.pathname  === '/Home'
 
     return (
@@ -29,7 +31,7 @@ const App = () => {
                 <AnimatePresence>
                     <Switch location={location} key={location.key}>
                         <Route path={["/","/cv"]} exact render={() => <Redirect to='/Home'/>}/>
-                        <Route path='/Home' component={Home}/>
+                        <Route path='/Home' render={() => <Home/>}/>
                         <Route path='/Skills' render={() => <Skills/>}/>
                         <Route path='/About' render={() => <About/>}/>
                         <Route path='/Portfolio' render={() => <Portfolio/>}/>

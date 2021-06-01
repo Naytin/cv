@@ -18,9 +18,7 @@ const PortfolioInfo = React.memo((props) => {
 
     return (<>
             <div className={s.wrapper}>
-
                 <NavLink to='/Portfolio' className={`${s.backToPortfolio} icon-arrow-left2`}/>
-                {/*<h4 className={s.title}>Details</h4>*/}
                 {<p>will by soon...</p> && <Details data={props.data}/>}
             </div>
         </>

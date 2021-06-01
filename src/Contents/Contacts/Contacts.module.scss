@@ -1,6 +1,5 @@
 .title {
     font-size: 2em;
-    text-align: center;
 }
 .wrapper {
     height: 100%;
@@ -33,13 +32,10 @@
 }
 
 @media (max-width: 1024px) {
-    .title {
-        text-align: center;
-    }
         .wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     .block {
@@ -48,9 +44,6 @@
 }
 
 @media (max-width: 480px) {
-    .title {
-        text-align: center;
-    }
     .block {
         padding: 10px;
         span {
