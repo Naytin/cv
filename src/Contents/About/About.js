@@ -6,13 +6,8 @@ import Socials from "../../common/Socials/Socials";
 import {Link} from "react-router-dom";
 import resume from '../../Resume.pdf'
 
-const About = React.memo(({showHeader}) => {
-    React.useEffect(() => {
-        showHeader()
-        return () => {
-            showHeader()// при отключении копмоненты включаем Header
-        }
-    }, [showHeader])
+const About = React.memo(() => {
+
     return (<>
             <motion.h2
                 initial={{ x: -1000 }}

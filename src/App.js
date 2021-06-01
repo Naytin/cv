@@ -16,30 +16,25 @@ import {projectInfo} from './common/data/data'
 
 
 const App = () => {
-    const [isShow, setIsShow] = React.useState(true)
     const location = useLocation()
     const data = projectInfo.find(d => d.endpoint === location.pathname)
-
-    const showHeader = React.useCallback(() => {
-        setIsShow(state => !state)
-    },[])
+    const show = location.pathname === '/Skills' || location.pathname  === '/Home'
 
     return (
         <div className="container">
             <Nav/>
-            {isShow && <Header/>}
+            {show && <Header/>}
             {/*<Loading/>*/}
             <div className="content__wrapper">
                 <AnimatePresence>
                     <Switch location={location} key={location.key}>
-                        <Route path={"/"} exact render={() => <Redirect to='/Home'/>}/>
-                        <Route path={"/cv"} exact render={() => <Redirect to='/Home'/>}/>
-                        <Route path='/Home' render={() => <Home/>}/>
+                        <Route path={["/","/cv"]} exact render={() => <Redirect to='/Home'/>}/>
+                        <Route path='/Home' component={Home}/>
                         <Route path='/Skills' render={() => <Skills/>}/>
-                        <Route path='/About' render={() => <About showHeader={showHeader}/>}/>
-                        <Route path='/Portfolio' render={() => <Portfolio showHeader={showHeader}/>}/>
+                        <Route path='/About' render={() => <About/>}/>
+                        <Route path='/Portfolio' render={() => <Portfolio/>}/>
                         <Route path='/Contacts' render={() => <Contacts/>}/>
-                        <Route path='/PortfolioInfo' render={() => <PortfolioInfo showHeader={showHeader} data={data}/>}/>
+                        <Route path='/PortfolioInfo' render={() => <PortfolioInfo data={data}/>}/>
                     </Switch>
                 </AnimatePresence>
             </div>

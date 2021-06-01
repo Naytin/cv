@@ -6,14 +6,7 @@ import {containerVariant} from "../Home/Home";
 import {projectInfo} from "../../common/data/data";
 
 
-const Portfolio = React.memo(({showHeader}) => {
-
-    React.useEffect(() => {
-        showHeader()
-        return () => {
-            showHeader()// при отключении копмоненты включаем Header
-        }
-    }, [showHeader])
+const Portfolio = React.memo(() => {
 
     const items = projectInfo.map((pi, i) => <PortfolioItem
         key={pi.id + i}
