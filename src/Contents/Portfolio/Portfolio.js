@@ -11,8 +11,8 @@ const Portfolio = React.memo(() => {
     const items = projects.map((pi, i) => <PortfolioItem
         key={pi.id + i}
         img={pi.images}
-        endPoint={pi.title}
-        type={pi.type}
+        endPoint={pi.endpoint}
+        title={pi.title}
         delay={i}/>
     )
 
@@ -35,16 +35,16 @@ const Portfolio = React.memo(() => {
 
 export default Portfolio
 
-export const PortfolioItem = React.memo(({img, endPoint, type, delay}) => {
+export const PortfolioItem = React.memo(({img, endPoint, delay,title}) => {
     return (
         <motion.div className={s.item}
                     initial={{x: 500, opacity: 0}}
                     animate={{x: 0, opacity: 1, transition: {delay: `0.${delay}`, duration: 1}}}>
-            <NavLink to={`/PortfolioInfo/${endPoint}`}>
+            <NavLink to={endPoint}>
                 <img src={img[0]} alt={endPoint}/>
                 <div className={s.mirror}>
                     <i className={`${s.file} icon-file-text2`}/>
-                    <p>{type}</p>
+                    <p>{title}</p>
                     <i className={`${s.arrow} icon-arrow-right2`}/>
                 </div>
             </NavLink>

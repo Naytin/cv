@@ -57,5 +57,16 @@ export const projectInfo = [
         technologies: ['React','Redux','Thunk','axios', 'Rest API', 'hooks'],
         images: projectImages.default,
         url: "https://naytin.github.io/todolist"
+    },
+    {
+        id: 6,
+        title: 'LOOM - landing page',
+        endpoint: '/PortfolioInfo/landing',
+        type: 'landing',
+        date: '15.03.2020',
+        des: '',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        images: projectImages.loom,
+        url: "https://naytin.github.io/Studio"
     }
 ]
