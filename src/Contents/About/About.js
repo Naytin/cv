@@ -4,7 +4,7 @@ import my from '../../assets/img/other/my.jpg'
 import {motion} from "framer-motion";
 import Socials from "../../common/Socials/Socials";
 import {Link} from "react-router-dom";
-import resume from '../../Resume.pdf'
+import resume from '../../VLADIMIR_NIKITIN.pdf'
 
 const About = React.memo(() => {
     return (<>
@@ -27,13 +27,14 @@ const About = React.memo(() => {
                                 animate={{ opacity: 1, x: 0, transition: {delay: 0.4, duration: 0.5}}}
                                 transition={{type: "spring", stiffness: 30 }}>
                         <article>
-                            Hi! I'm Vova. I'm a front-end developer, very passionate and dedicated
-                            to my work. Through continuous development, I have
-                            acquired the skills and knowledge necessary to
-                            accomplish the assigned tasks. I love every stage of the
-                            development process, so every day I improve my
-                            knowledge and develop as a developer
-
+                            Hello, I am a person who is very into programming.
+                            I have experience in creating SPA with React / Redux / TypeScript.
+                            Now I am improving my skills in this direction and expanding them
+                            with new technologies. I'm planing to learn React-native because
+                            mobile development is very important these days. and I also want
+                            to improve my English so that I can communicate freely and
+                            understand the interlocutor.
+                            I spend my free time developing as a web developer.
                         </article>
                         <div className={s.contacts__block}>
                             <Socials/>

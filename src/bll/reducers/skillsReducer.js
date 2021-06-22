@@ -7,7 +7,8 @@ const initialState = {
         {skill: 'React', description: ['React/Redux','Thunk','Hooks'], icon: skillsImages.react},
         {skill: 'JavaScript', description: ['JavaScript','ES5/ES6'], icon: skillsImages.js},
         {skill: 'TypeScript', description: ['TypeScript'], icon: skillsImages.ts},
-        {skill: 'HTML', description: ['HTML, I work with semantic tag and provide modern feature'], icon: skillsImages.html},
+        {skill: 'HTML', description: ['HTML, I work with semantic tag and provide modern feature'],
+            icon: skillsImages.html},
         {skill: 'CSS', description: ['CSS/SCSS'], icon: skillsImages.css},
         {skill: 'Git', description: ['GIT'], icon: skillsImages.git},
     ]
