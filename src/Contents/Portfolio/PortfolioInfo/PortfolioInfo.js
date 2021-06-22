@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import s from './PortfolioInfo.module.scss'
 import {Slider} from "./Slider/Slider";
 import {motion} from "framer-motion";
@@ -50,7 +50,7 @@ const Details = ({data}) => {
                 <p className={s.details__title}>
                     Date of creation: {data.date}</p>
                 <p className={s.details__title}>URL:&emsp;
-                    <Link target='_blank' to={{pathname: data.url}}>{data.url}</Link>
+                    <NavLink target='_blank' to={{pathname: data.url}}>{data.url}</NavLink>
                 </p>
                 <p className={s.details__title}>Share: </p>
             </div>

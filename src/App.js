@@ -15,7 +15,6 @@ import {projectInfo} from './common/data/projectsData'
 import {useActions} from "./Hooks/useActions";
 import {useSelector} from "react-redux";
 import Loader from "./common/components/Loader/Loader";
-// import Loading from './common/Loading/Loading'
 
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
     const data = projectInfo.find(d => d.endpoint === location.pathname)
     const isLoading = useSelector(state => state.loading.isLoading)
     const {loading} = useActions()
-    console.log(isLoading)
 
     useEffect(() => {
         let id = setTimeout(() => {
