@@ -3,7 +3,6 @@ import s from './Header.module.scss'
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 import Socials from "../common/Socials/Socials";
-import Loader from "../common/components/Loader/Loader";
 
 export const PATH = {
     linkedin: 'https://www.linkedin.com/in/volodymyrnikitin/',
@@ -24,7 +23,7 @@ const Header = () => {
                         alt={PATH.avatar}/>
                 </Link>
                 <div className={s.title}>
-                    <h2>NIKITIN VOVA</h2>
+                    <h2>NIKITIN VLADIMIR</h2>
                     <span>Front-End Developer</span>
                     <Socials/>
                 </div>

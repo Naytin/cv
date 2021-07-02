@@ -50,7 +50,7 @@ const Details = ({data}) => {
                 <p className={s.details__title}>
                     Date of creation: {data.date}</p>
                 <p className={s.details__title}>URL:&emsp;
-                    <NavLink target='_blank' to={{pathname: data.url}}>{data.url}</NavLink>
+                    <a href={data.url} target='_blank' >{data.url}</a>
                 </p>
                 <p className={s.details__title}>Share: </p>
             </div>

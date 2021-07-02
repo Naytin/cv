@@ -22,7 +22,7 @@ const Home = () => {
                     animate='visible'
                     exit='exit'
         >
-            <h2 className={s.title}>NIKITIN VOVA</h2>
+            <h2 className={s.title}>NIKITIN VLADIMIR</h2>
             <Link target='_blank'
                   to={{pathname: PATH.linkedin}}
             ><motion.span className='icon-linkedin'
