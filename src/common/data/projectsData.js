@@ -3,28 +3,17 @@ import {projectImages} from './images-import'
 export const projectInfo = [
     {
         id: 1,
-        title: 'Social-network',
-        endpoint: '/PortfolioInfo/Social-network',
-        type: 'Social-network',
+        title: 'TODO',
+        endpoint: '/PortfolioInfo/TODO',
+        type: 'TODO',
         date: ' - in progress',
         des: '',
-        technologies: ['React','Redux','Thunk','axios', 'Rest API'],
+        technologies: ['React','Redux','Thunk','axios', 'Rest API', 'hooks'],
         images: projectImages.default,
-        url: "https://github.com/Naytin/social-network"
+        url: "https://naytin.github.io/todolist"
     },
     {
         id: 2,
-        title: 'Medical',
-        endpoint: '/PortfolioInfo/Medical',
-        type: 'Medical',
-        date: '31.03.2020',
-        des: '',
-        technologies: ['HTML', 'CSS/SCSS', 'JavaScript'],
-        images: projectImages.medical,
-        url: "https://naytin.github.io/Medical/"
-    },
-    {
-        id: 3,
         title: 'photographer',
         endpoint: '/PortfolioInfo/photographer',
         type: 'Portfolio for Photographer',
@@ -36,7 +25,7 @@ export const projectInfo = [
         url: "https://naytin.github.io/Portfolio/"
     },
     {
-        id: 4,
+        id: 3,
         title: 'weatherAPI',
         endpoint: '/PortfolioInfo/weatherAPI',
         type: 'weather App',
@@ -48,15 +37,26 @@ export const projectInfo = [
         url: "https://naytin.github.io/weather-app/"
     },
     {
-        id: 5,
-        title: 'TODO',
-        endpoint: '/PortfolioInfo/TODO',
-        type: 'TODO',
+        id: 4,
+        title: 'Social-network',
+        endpoint: '/PortfolioInfo/Social-network',
+        type: 'Social-network',
         date: ' - in progress',
         des: '',
-        technologies: ['React','Redux','Thunk','axios', 'Rest API', 'hooks'],
+        technologies: ['React','Redux','Thunk','axios', 'Rest API'],
         images: projectImages.default,
-        url: "https://naytin.github.io/todolist"
+        url: "https://github.com/Naytin/social-network"
+    },
+    {
+        id: 5,
+        title: 'Medical',
+        endpoint: '/PortfolioInfo/Medical',
+        type: 'Medical',
+        date: '31.03.2020',
+        des: '',
+        technologies: ['HTML', 'CSS/SCSS', 'JavaScript'],
+        images: projectImages.medical,
+        url: "https://naytin.github.io/Medical/"
     },
     {
         id: 6,

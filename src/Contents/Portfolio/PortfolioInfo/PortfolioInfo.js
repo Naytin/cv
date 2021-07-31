@@ -50,7 +50,7 @@ const Details = ({data}) => {
                 <p className={s.details__title}>
                     Date of creation: {data.date}</p>
                 <p className={s.details__title}>URL:&emsp;
-                    <a href={data.url} target='_blank' >{data.url}</a>
+                    <a href={data.url} rel='noreferrer' target='_blank' >{data.url}</a>
                 </p>
                 <p className={s.details__title}>Share: </p>
             </div>

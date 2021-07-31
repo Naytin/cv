@@ -20,9 +20,9 @@ const BurgerButton = React.memo(({set}) => {
                             initial="hidden"
                             animate="visible"
                             variants={list}>
-                    <motion.span className={s.btnElem} variants={item}></motion.span>
-                    <motion.span className={s.btnElem} variants={item}></motion.span>
-                    <motion.span className={s.btnElem} variants={item}></motion.span>
+                    <motion.span className={s.btnElem} variants={item}/>
+                    <motion.span className={s.btnElem} variants={item}/>
+                    <motion.span className={s.btnElem} variants={item}/>
                 </motion.div>
             </div>
 

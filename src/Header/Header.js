@@ -17,6 +17,7 @@ const Header = () => {
                        animate={{x: 0, opacity: 1, transition: {duration: 1.4}}}
         >
             <div className={s.content}>
+
                 <Link to='/Home'>
                     <img
                         src={PATH.avatar}
@@ -25,6 +26,7 @@ const Header = () => {
                 <div className={s.title}>
                     <h2>NIKITIN VLADIMIR</h2>
                     <span>Front-End Developer</span>
+
                     <Socials/>
                 </div>
             </div>

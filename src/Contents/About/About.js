@@ -4,7 +4,7 @@ import my from '../../assets/img/other/my.jpg'
 import {motion} from "framer-motion";
 import Socials from "../../common/Socials/Socials";
 import {Link} from "react-router-dom";
-import resume from '../../VLADIMIR_NIKITIN.pdf'
+import resume from '../../assets/VLADIMIR_NIKITIN.pdf'
 
 const About = React.memo(() => {
     return (<>
@@ -40,8 +40,8 @@ const About = React.memo(() => {
                             <Socials/>
                             <Link to='/contacts' className={s.btn}
                             >Contact me</Link>
-                            <Link to={resume} target='_blank' className={s.btn}
-                            >Download cv</Link>
+                            <a href={resume} target='_blank' className={s.btn}
+                            >Download cv</a>
                         </div>
                     </motion.div>
                 </div>

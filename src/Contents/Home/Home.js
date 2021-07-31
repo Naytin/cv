@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './Home.module.scss'
-import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 import {PATH} from "../../Header/Header";
 
@@ -23,13 +22,16 @@ const Home = () => {
                     exit='exit'
         >
             <h2 className={s.title}>NIKITIN VLADIMIR</h2>
-            <Link target='_blank'
-                  to={{pathname: PATH.linkedin}}
-            ><motion.span className='icon-linkedin'
-                          initial={{ opacity: 0 }}
-                          animate={{ scale: 2, opacity: 1, transition: {delay: 1, duration: 1}}}
-                          transition={{ duration: 0.5 }}
-            /></Link>
+            <a target='_blank'
+               rel='noreferrer'
+               href={PATH.linkedin}
+            >
+                <motion.span className='icon-linkedin'
+                             initial={{opacity: 0}}
+                             animate={{scale: 2, opacity: 1, transition: {delay: 1, duration: 1}}}
+                             transition={{duration: 0.5}}
+                />
+            </a>
         </motion.div>
     )
 }
