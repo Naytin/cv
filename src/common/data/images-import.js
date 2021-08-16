@@ -18,6 +18,10 @@ import loom_1 from '../../assets/img/portfolio/loom/LandingPage-LOOM.jpg'
 import loom_2 from '../../assets/img/portfolio/loom/LOOM-do.png'
 import loom_3 from '../../assets/img/portfolio/loom/LOOM-projects.jpg'
 import loom_4 from '../../assets/img/portfolio/loom/LOOM-customersLink.jpg'
+// todos images
+import todo from '../../assets/img/portfolio/todolist/todo-main.png'
+import todo_2 from '../../assets/img/portfolio/todolist/todo-main-response.png'
+import todo_3 from '../../assets/img/portfolio/todolist/todo-login.png'
 // skills images
 import react from "../../assets/icon/iconfinder_react_color_7423888.png";
 import js from "../../assets/icon/iconfinder_js_282802.png";
@@ -33,7 +37,8 @@ export const projectImages = {
     weatherApp: [wApp,wApp2],
     medical: [dent,dent2,dent3],
     default: [default_1],
-    loom: [loom_1,loom_2,loom_3,loom_4]
+    loom: [loom_1,loom_2,loom_3,loom_4],
+    todo: [todo,todo_2,todo_3]
 }
 
 export const skillsImages = {

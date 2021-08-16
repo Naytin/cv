@@ -6,7 +6,6 @@
 .content__wrapper {
   padding: 50px;
   width: 100%;
-  //background-color: #001725;
   color: #fff;
   text-align: center;
 }
@@ -37,7 +36,8 @@ html {
   }
 }
 // styling scrollbar
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
   .content__wrapper {
     padding: 70px 10px 10px 10px;
   }

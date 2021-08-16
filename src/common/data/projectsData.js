@@ -8,8 +8,8 @@ export const projectInfo = [
         type: 'TODO',
         date: ' - in progress',
         des: '',
-        technologies: ['React','Redux','Thunk','axios', 'Rest API', 'hooks'],
-        images: projectImages.default,
+        technologies: ['React','Redux Toolkit','axios', 'Rest API', 'hooks', 'TailwindCss'],
+        images: projectImages.todo,
         url: "https://naytin.github.io/todolist"
     },
     {
@@ -36,17 +36,17 @@ export const projectInfo = [
         images: projectImages.weatherApp,
         url: "https://naytin.github.io/weather-app/"
     },
-    {
-        id: 4,
-        title: 'Social-network',
-        endpoint: '/PortfolioInfo/Social-network',
-        type: 'Social-network',
-        date: ' - in progress',
-        des: '',
-        technologies: ['React','Redux','Thunk','axios', 'Rest API'],
-        images: projectImages.default,
-        url: "https://github.com/Naytin/social-network"
-    },
+    // {
+    //     id: 4,
+    //     title: 'Social-network',
+    //     endpoint: '/PortfolioInfo/Social-network',
+    //     type: 'Social-network',
+    //     date: ' - in progress',
+    //     des: '',
+    //     technologies: ['React','Redux','Thunk','axios', 'Rest API'],
+    //     images: projectImages.default,
+    //     url: "https://github.com/Naytin/social-network"
+    // },
     {
         id: 5,
         title: 'Medical',

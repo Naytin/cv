@@ -43,17 +43,11 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 20px;
-      img {
-        position: absolute;
-        box-shadow:1px 1px 20px 12px rgba(168,184,250,0.37);
-        -webkit-box-shadow:1px 1px 20px 12px rgba(168,184,250,0.37);
-        -moz-box-shadow:1px 1px 20px 12px rgba(168,184,250,0.37);
-      }
+      overflow: hidden;
     }
 
     .details__info {
       margin-top: 30px;
-      height: 600px;
       text-align: left;
 
       .details__title {
